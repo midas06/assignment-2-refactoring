@@ -56,25 +56,25 @@ class Editor(object):
         else:
             income = ""
 
-        while not Validator.has_valid_id(id_):
-            id_ = Validator.clean_id(self.set_new_value(id_, "A123", "id"))
+        while not DataValidator.has_valid_id(id_):
+            id_ = DataCleaner.clean_id(self.set_new_value(id_, "A123", "id"))
 
-        while not Validator.has_valid_gender(gender):
-            gender = Validator.clean_gender(self.set_new_value(gender, "M", "gender"))
+        while not DataValidator.has_valid_gender(gender):
+            gender = DataCleaner.clean_gender(self.set_new_value(gender, "M", "gender"))
 
-        while not Validator.has_valid_age(age):
-            age = Validator.clean_age(self.set_new_value(age, "01", "age"))
+        while not DataValidator.has_valid_age(age):
+            age = DataCleaner.clean_age(self.set_new_value(age, "01", "age"))
 
-        while not Validator.has_valid_sales(sales):
-            sales = Validator.clean_sales(self.set_new_value(sales, "001", "sales"))
+        while not DataValidator.has_valid_sales(sales):
+            sales = DataCleaner.clean_sales(self.set_new_value(sales, "001", "sales"))
 
-        while not Validator.has_valid_bmi(bmi):
-            bmi = Validator.clean_bmi(self.set_new_value(bmi, "Normal, Overweight, Obesity, Underweight", "bmi"))
+        while not DataValidator.has_valid_bmi(bmi):
+            bmi = DataCleaner.clean_bmi(self.set_new_value(bmi, "Normal, Overweight, Obesity, Underweight", "bmi"))
 
-        while not Validator.has_valid_income(income):
-            income = Validator.clean_income(self.set_new_value(income, "00-100", "income"))
+        while not DataValidator.has_valid_income(income):
+            income = DataCleaner.clean_income(self.set_new_value(income, "00-100", "income"))
 
-        p = Person(Validator.clean_id(id_), Validator.clean_gender(gender), Validator.clean_age(age), Validator.clean_sales(sales), Validator.clean_bmi(bmi), Validator.clean_income(income))
+        p = Person(DataCleaner.clean_id(id_), DataCleaner.clean_gender(gender), DataCleaner.clean_age(age), DataCleaner.clean_sales(sales), DataCleaner.clean_bmi(bmi), DataCleaner.clean_income(income))
 
         self._good_data.update({p.get_id(): p})
         self._raw_data.remove(a_string)

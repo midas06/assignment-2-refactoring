@@ -1,0 +1,4 @@
+Name:		Large Class
+Location:	Validator class, between lines 42-94 and 106-151
+Reasons:	Class was wearing too many hats
+Strategy:	Extract data cleaning methods and data validation methods, move to new static classes.
