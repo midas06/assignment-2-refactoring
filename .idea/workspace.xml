@@ -14,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python_Ass_1$RefactoringTestRunner.coverage" NAME="RefactoringTestRunner Coverage Results" MODIFIED="1461720594535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RefactoringTests" />
+    <SUITE FILE_PATH="coverage/Python_Ass_1$RefactoringTestRunner.coverage" NAME="RefactoringTestRunner Coverage Results" MODIFIED="1461720973845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RefactoringTests" />
     <SUITE FILE_PATH="coverage/Python_Ass_1$Unittests_in_test1.coverage" NAME="Unittests in test1 Coverage Results" MODIFIED="1461716986715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Ass_1$Unittests_in_MainTests__1_.coverage" NAME="Unittests in MainTests (1) Coverage Results" MODIFIED="1460170812664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Ass_1$Unittests_in_testtest.coverage" NAME="Unittests in testtest Coverage Results" MODIFIED="1461716773090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -88,11 +88,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DataCleaner.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="DataCleaner.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DataCleaner.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.7578009">
+                  <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -108,10 +108,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RefactoringTestRunner.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RefactoringTestRunner.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RefactoringTests/RefactoringTestRunner.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37890044">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
@@ -149,11 +149,21 @@
           <file leaf-file-name="Validator.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Validator.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.11589896">
-                  <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.10104012">
+                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataValidator.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataValidator.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="3" column="19" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="19" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -207,6 +217,8 @@
         <option value="$PROJECT_DIR$/RefactoringTests/CleanTests.py" />
         <option value="$PROJECT_DIR$/RefactoringTests/ValidationTests.py" />
         <option value="$PROJECT_DIR$/RefactoringTests/RefactoringTestRunner.py" />
+        <option value="$PROJECT_DIR$/DataValidator.py" />
+        <option value="$PROJECT_DIR$/DataCleaner.py" />
         <option value="$PROJECT_DIR$/Validator.py" />
       </list>
     </option>
@@ -717,16 +729,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1036,14 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataCleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Processor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1058,16 +1052,6 @@
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RefactoringTests/RefactoringTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37890044">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1100,10 +1084,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RefactoringTests/RefactoringTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataCleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7578009">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataValidator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11589896">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.10104012">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

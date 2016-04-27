@@ -1,4 +1,4 @@
-class InputCleaner(object):
+class DataCleaner(object):
 
     @staticmethod
     def clean_id(an_id):
