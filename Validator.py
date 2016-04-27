@@ -1,4 +1,5 @@
 from Person import *
+from InputCleaner import *
 import re
 
 
@@ -38,6 +39,23 @@ class Validator:
     ###
         # clean methods
 
+    @staticmethod
+    def clean_input(an_input):
+        the_input = an_input.replace(" ", "")
+        the_input = the_input.split(",")
+        try:
+            the_input[0] = InputCleaner.clean_id(the_input[0])
+            the_input[1] = InputCleaner.clean_gender(the_input[1])
+            the_input[2] = InputCleaner.clean_age(the_input[2])
+            the_input[3] = InputCleaner.clean_sales(the_input[3])
+            the_input[4] = InputCleaner.clean_bmi(the_input[4])
+            the_input[5] = InputCleaner.clean_income(the_input[5])
+        except IndexError as e:
+            pass
+        return the_input
+
+    """
+    PRE REFACTORING
     @staticmethod
     def clean_input(an_input):
         the_input = an_input.replace(" ", "")
@@ -93,6 +111,7 @@ class Validator:
         if len(an_income) == 1:
             an_income = "0" + an_income
         return an_income
+    """
 
     ###
         # validate methods
