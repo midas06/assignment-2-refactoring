@@ -6,7 +6,6 @@ class DataCleaner(object):
         if len(an_id) > 4:
             ex = len(an_id) - 4
             an_id = an_id[:-ex]
-
         return an_id
 
     @staticmethod
@@ -14,7 +13,6 @@ class DataCleaner(object):
         if len(a_gender) > 1:
             ex = len(a_gender) - 1
             a_gender = a_gender[:-ex]
-
         return a_gender.title()
 
     @staticmethod
