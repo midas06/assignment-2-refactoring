@@ -1,5 +1,5 @@
 from Person import *
-from InputCleaner import *
+from DataCleaner import *
 import re
 
 
@@ -115,6 +115,8 @@ class Validator:
 
     ###
         # validate methods
+    """
+    PRE REFACTORING
     @staticmethod
     def has_valid_id(an_id):
         pattern = re.compile('^([A-Z]{1}[0-9]{3})+$')
@@ -165,6 +167,8 @@ class Validator:
         if pattern.match(an_income) is None:
             return False
         return True
+
+    """
 
     def isvalid(self, a_list):
         if self.has_valid_id(a_list[0]) and self.has_valid_gender(a_list[1]) and self.has_valid_age(a_list[2]) and self.has_valid_sales(a_list[3]) and self.has_valid_bmi(a_list[4]) and self.has_valid_income(a_list[5]):
