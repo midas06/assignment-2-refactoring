@@ -1,6 +1,6 @@
 from Person import *
-from InputCleaner import *
-import re
+from DataCleaner import *
+from DataValidator import *
 
 
 class Validator:
@@ -44,12 +44,12 @@ class Validator:
         the_input = an_input.replace(" ", "")
         the_input = the_input.split(",")
         try:
-            the_input[0] = InputCleaner.clean_id(the_input[0])
-            the_input[1] = InputCleaner.clean_gender(the_input[1])
-            the_input[2] = InputCleaner.clean_age(the_input[2])
-            the_input[3] = InputCleaner.clean_sales(the_input[3])
-            the_input[4] = InputCleaner.clean_bmi(the_input[4])
-            the_input[5] = InputCleaner.clean_income(the_input[5])
+            the_input[0] = DataCleaner.clean_id(the_input[0])
+            the_input[1] = DataCleaner.clean_gender(the_input[1])
+            the_input[2] = DataCleaner.clean_age(the_input[2])
+            the_input[3] = DataCleaner.clean_sales(the_input[3])
+            the_input[4] = DataCleaner.clean_bmi(the_input[4])
+            the_input[5] = DataCleaner.clean_income(the_input[5])
         except IndexError as e:
             pass
         return the_input
@@ -115,6 +115,8 @@ class Validator:
 
     ###
         # validate methods
+    """
+    PRE REFACTORING
     @staticmethod
     def has_valid_id(an_id):
         pattern = re.compile('^([A-Z]{1}[0-9]{3})+$')
@@ -166,8 +168,18 @@ class Validator:
             return False
         return True
 
+
+
     def isvalid(self, a_list):
         if self.has_valid_id(a_list[0]) and self.has_valid_gender(a_list[1]) and self.has_valid_age(a_list[2]) and self.has_valid_sales(a_list[3]) and self.has_valid_bmi(a_list[4]) and self.has_valid_income(a_list[5]):
+            return True
+
+        return False
+
+    """
+    @staticmethod
+    def isvalid(a_list):
+        if DataValidator.has_valid_id(a_list[0]) and DataValidator.has_valid_gender(a_list[1]) and DataValidator.has_valid_age(a_list[2]) and DataValidator.has_valid_sales(a_list[3]) and DataValidator.has_valid_bmi(a_list[4]) and DataValidator.has_valid_income(a_list[5]):
             return True
 
         return False
