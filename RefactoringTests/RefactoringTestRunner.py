@@ -1,11 +1,13 @@
 from RefactoringTests.CleanTests import *
 from RefactoringTests.ValidationTests import *
+from RefactoringTests.EditorNewValueTests import *
 
 
 def refactoring_suite():
     the_suite = unittest.TestSuite()
     the_suite.addTest(unittest.makeSuite(CleanCoverageTests))
     the_suite.addTest(unittest.makeSuite(ValidationCoverageTests))
+    the_suite.addTest(unittest.makeSuite(EditorNewValueCoverageTests))
 
     return the_suite
 

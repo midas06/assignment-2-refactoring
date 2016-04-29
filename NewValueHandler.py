@@ -1,5 +1,5 @@
 from DataCleaner import *
-from unittest import mock
+import mock
 
 
 class NewValueHandler(object):
