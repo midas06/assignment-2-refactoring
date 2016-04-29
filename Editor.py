@@ -83,6 +83,9 @@ class Editor(object):
         print("The current " + value + " is: " + bad_input)
         return input("The correct format is: " + correct_input + "\nSet a new " + value + ":\n")
 
+
+
+
     def export_good_data(self):
         return self._good_data
 
