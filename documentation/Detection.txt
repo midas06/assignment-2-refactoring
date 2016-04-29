@@ -7,3 +7,8 @@ Name:		Introduce Parameter Object
 Location:	Editor class, lines 82-84 - Editor.set_new_value()
 Reasons:	Editor.validate() overly relied on this generic method, difficult to test, overly complicated
 Strategy:	Create a new immutable class to represent the different options to be passed to the method
+
+Name:		Consolidate Conditional Expression
+Location:	Editor class, lines 38-58 - Editor.validate()
+Reasons:	Long if statement, overly complex for what was needed
+Strategy:	Consolidate the conditionals in a single expression, a more pythonic solution
