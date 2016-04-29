@@ -57,6 +57,7 @@ class Editor(object):
         else:
             income = ""
 
+
         """
         while not DataValidator.has_valid_id(id_):
             id_ = DataCleaner.clean_id(self.set_new_value(id_, "A123", "id"))
@@ -78,22 +79,22 @@ class Editor(object):
         """
 
         while not DataValidator.has_valid_id(id_):
-            id_ = NewValueHandler.set_new_id(id_)
+            id_ = IDValueHandler.set_new_value(id_)
 
         while not DataValidator.has_valid_gender(gender):
-            gender = NewValueHandler.set_new_gender(gender)
+            gender = GenderValueHandler.set_new_value(gender)
 
         while not DataValidator.has_valid_age(age):
-            age = NewValueHandler.set_new_age(age)
+            age = AgeValueHandler.set_new_value(age)
 
         while not DataValidator.has_valid_sales(sales):
-            sales = NewValueHandler.set_new_sales(sales)
+            sales = SalesValueHandler.set_new_value(sales)
 
         while not DataValidator.has_valid_bmi(bmi):
-            bmi = NewValueHandler.set_new_bmi(bmi)
+            bmi = BmiValueHandler.set_new_value(bmi)
 
         while not DataValidator.has_valid_income(income):
-            income = NewValueHandler.set_new_income(income)
+            income = IncomeValueHandler.set_new_value(income)
 
         p = Person(DataCleaner.clean_id(id_), DataCleaner.clean_gender(gender), DataCleaner.clean_age(age), DataCleaner.clean_sales(sales), DataCleaner.clean_bmi(bmi), DataCleaner.clean_income(income))
 
