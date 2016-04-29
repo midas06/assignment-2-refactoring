@@ -33,50 +33,18 @@ class Editor(object):
             self._raw_data.remove(the_string)
 
     def validate(self, a_string):
-        list_ = Validator.clean_input(a_string)
+        list_ = [""] * 6
+        temp = Validator.clean_input(a_string)
+
+        for i in range(len(temp)):
+            list_[i] = temp[i]
 
         id_ = list_[0]
-        if len(list_) > 1:
-            gender = list_[1]
-        else:
-            gender = ""
-        if len(list_) > 2:
-            age = list_[2]
-        else:
-            age = ""
-        if len(list_) > 3:
-            sales = list_[3]
-        else:
-            sales = ""
-        if len(list_) > 4:
-            bmi = list_[4]
-        else:
-            bmi = ""
-        if len(list_) > 5:
-            income = list_[5]
-        else:
-            income = ""
-
-
-        """
-        while not DataValidator.has_valid_id(id_):
-            id_ = DataCleaner.clean_id(self.set_new_value(id_, "A123", "id"))
-
-        while not DataValidator.has_valid_gender(gender):
-            gender = DataCleaner.clean_gender(self.set_new_value(gender, "M", "gender"))
-
-        while not DataValidator.has_valid_age(age):
-            age = DataCleaner.clean_age(self.set_new_value(age, "01", "age"))
-
-        while not DataValidator.has_valid_sales(sales):
-            sales = DataCleaner.clean_sales(self.set_new_value(sales, "001", "sales"))
-
-        while not DataValidator.has_valid_bmi(bmi):
-            bmi = DataCleaner.clean_bmi(self.set_new_value(bmi, "Normal, Overweight, Obesity, Underweight", "bmi"))
-
-        while not DataValidator.has_valid_income(income):
-            income = DataCleaner.clean_income(self.set_new_value(income, "00-100", "income"))
-        """
+        gender = list_[1]
+        age = list_[2]
+        sales = list_[3]
+        bmi = list_[4]
+        income = list_[5]
 
         while not DataValidator.has_valid_id(id_):
             id_ = IDValueHandler.set_new_value(id_)
@@ -100,12 +68,6 @@ class Editor(object):
 
         self._good_data.update({p.get_id(): p})
         self._raw_data.remove(a_string)
-
-    """
-    def set_new_value(self, bad_input, correct_input, value):
-        print("The current " + value + " is: " + bad_input)
-        return input("The correct format is: " + correct_input + "\nSet a new " + value + ":\n")
-    """
 
     def export_good_data(self):
         return self._good_data
