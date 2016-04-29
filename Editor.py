@@ -1,5 +1,6 @@
 from Validator import *
 from Person import *
+from NewValueHandler import *
 
 
 class Editor(object):
@@ -56,6 +57,7 @@ class Editor(object):
         else:
             income = ""
 
+        """
         while not DataValidator.has_valid_id(id_):
             id_ = DataCleaner.clean_id(self.set_new_value(id_, "A123", "id"))
 
@@ -73,18 +75,36 @@ class Editor(object):
 
         while not DataValidator.has_valid_income(income):
             income = DataCleaner.clean_income(self.set_new_value(income, "00-100", "income"))
+        """
+
+        while not DataValidator.has_valid_id(id_):
+            id_ = NewValueHandler.set_new_id(id_)
+
+        while not DataValidator.has_valid_gender(gender):
+            gender = NewValueHandler.set_new_gender(gender)
+
+        while not DataValidator.has_valid_age(age):
+            age = NewValueHandler.set_new_age(age)
+
+        while not DataValidator.has_valid_sales(sales):
+            sales = NewValueHandler.set_new_sales(sales)
+
+        while not DataValidator.has_valid_bmi(bmi):
+            bmi = NewValueHandler.set_new_bmi(bmi)
+
+        while not DataValidator.has_valid_income(income):
+            income = NewValueHandler.set_new_income(income)
 
         p = Person(DataCleaner.clean_id(id_), DataCleaner.clean_gender(gender), DataCleaner.clean_age(age), DataCleaner.clean_sales(sales), DataCleaner.clean_bmi(bmi), DataCleaner.clean_income(income))
 
         self._good_data.update({p.get_id(): p})
         self._raw_data.remove(a_string)
 
+    """
     def set_new_value(self, bad_input, correct_input, value):
         print("The current " + value + " is: " + bad_input)
         return input("The correct format is: " + correct_input + "\nSet a new " + value + ":\n")
-
-
-
+    """
 
     def export_good_data(self):
         return self._good_data

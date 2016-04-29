@@ -4,6 +4,8 @@ class NewValueHandler(object):
     def set_new_value():
         return input("Please set a new value:\n")
 
+
+
     @staticmethod
     def set_new_id(bad_input):
         print("The current ID value is: " + bad_input)
