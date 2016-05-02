@@ -32,12 +32,18 @@ class Editor(object):
         if the_string in self._raw_data:
             self._raw_data.remove(the_string)
 
-    def validate(self, a_string):
+    @staticmethod
+    def string_to_list(a_string):
         list_ = [""] * 6
         temp = Validator.clean_input(a_string)
 
         for i in range(len(temp)):
             list_[i] = temp[i]
+
+        return list_
+
+    def validate(self, a_string):
+        list_ = Editor.string_to_list(a_string)
 
         id_ = list_[0]
         gender = list_[1]
