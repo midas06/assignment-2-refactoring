@@ -3,7 +3,6 @@ import unittest
 
 
 class ValidationCoverageTests(unittest.TestCase):
-    # A558,F,08,885,Normal,517
 
     def setUp(self):
         self.v = Validator()

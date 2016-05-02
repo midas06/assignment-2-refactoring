@@ -11,7 +11,7 @@ class Processor(object):
         self.validator = Validator()
         self.database = Database()
         self.editor = Editor()
-        # self.plotter = Plotter()
+        self.plotter = Plotter()
 
     def add_data(self, fileloc):
         self.database.empty_database()
