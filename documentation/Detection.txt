@@ -3,7 +3,7 @@ Location:	Validator class, between lines 42-94 and 106-151
 Reasons:	Class was wearing too many hats
 Strategy:	Extract data cleaning methods and data validation methods, move to new static classes.
 
-Name:		Introduce Parameter Object
+Name:		Over complicated method/parameters - Introduce Parameter Object
 Location:	Editor class, lines 82-84 - Editor.set_new_value()
 Reasons:	Editor.validate() overly relied on this generic method, difficult to test, overly complicated
 Strategy:	Create a new immutable class to represent the different options to be passed to the method
